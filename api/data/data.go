@@ -9,12 +9,8 @@ type DataSource interface {
 	RegisterEndpoints()
 }
 
-type EndpointHandler interface {
-	
-}
-
 func GetDataSources() []DataSource {
-	return []DataSource {
+	return []DataSource{
 		cdc.NewCdcDataSource(),
 	}
 }
